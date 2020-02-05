@@ -230,6 +230,11 @@
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+
+    @include respond(bp-1){
+        animation: none;
+        color: $white-1;
+    }
 }
 
 //GlowText Animation
